@@ -9,6 +9,7 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 import axios from "axios";
 import Common from "./common";
+import Image from 'react-bootstrap/Image'
 const BASE_URL = Common.API_URL;
 export default class report extends Component {
   state = {
@@ -65,7 +66,9 @@ export default class report extends Component {
           <Container>
             <Navbar.Brand href="#">ค้นหาเลขไปรษณีย์</Navbar.Brand>
             <div style={{fontSize:"25px", color:"white"}} > 
-                65130835 ศักดิเมธ ขจรฤทธิ์เดช
+                <Image src="https://www.metalbridges.com/wp-content/uploads/2017/02/jackie-chan-01.jpg" roundedCircle thumbnail 
+                style={{width:"70px", height:"70px"}}></Image>
+                {" "} 65130835 ศักดิเมธ ขจรฤทธิ์เดช
             </div>
           </Container>
         </Navbar>
